@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { FaDiscord, FaTwitter } from "react-icons/fa";
 
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
@@ -32,14 +32,11 @@ const Footer = () => {
           <Slogan>By NFT people, for NFT people</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://google.com">
-            <AiFillGithub size="3rem" />
+          <SocialIcons href="#">
+            <FaTwitter size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://google.com">
-            <AiFillLinkedin size="3rem" />
-          </SocialIcons>
-          <SocialIcons href="https://google.com">
-            <AiFillInstagram size="3rem" />
+          <SocialIcons href="#">
+            <FaDiscord size="3rem" />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
