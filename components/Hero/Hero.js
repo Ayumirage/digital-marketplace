@@ -14,11 +14,11 @@ const Hero = (props) => (
       <LeftSection>
         <SectionTitle main center>
           Welcome To <br />
-          Open Ocean
+          Apelympics
         </SectionTitle>
         <SectionText>
-          Discover, collect, and sell extraordinary NFTs. OpenOcean is the
-          world's best and latest NFT marketplace
+          Please help testing by minting an NFT and buy and sell it on the
+          marketplace.
         </SectionText>
         <Button onClick={props.handleClick}>Learn More</Button>
       </LeftSection>

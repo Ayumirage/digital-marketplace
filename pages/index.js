@@ -91,7 +91,10 @@ export default function Home() {
                   key={i}
                   className="border shadow rounded-xl overflow-hidden"
                 >
-                  <img src={nft.image} />
+                  <img
+                    style={{ height: "200px", width: "250px" }}
+                    src={nft.image}
+                  />
                   <div className="p-4">
                     <p
                       style={{ height: "64px" }}
@@ -108,7 +111,7 @@ export default function Home() {
                       {nft.price} ETH
                     </p>
                     <button
-                      className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded"
+                      className="w-full bg-blue-500 text-white font-bold py-2 px-12 rounded"
                       onClick={() => buyNft(nft)}
                     >
                       Buy
