@@ -20,7 +20,7 @@ export default function Home() {
   async function loadNFTs() {
     /* create a generic provider and query for unsold market items */
     const provider = new ethers.providers.JsonRpcProvider(
-      "https://polygon-mainnet.infura.io/v3/dbd98a18a03b41f8ad528d7e47ca01dd"
+      "https://polygon-rpc.com/"
     );
     const tokenContract = new ethers.Contract(nftaddress, NFT.abi, provider);
     const marketContract = new ethers.Contract(
@@ -73,6 +73,7 @@ export default function Home() {
     );
     await transaction.wait();
     loadNFTs();
+    console.log(transaction);
   }
   if (loadingState === "loaded" && !nfts.length)
     return (

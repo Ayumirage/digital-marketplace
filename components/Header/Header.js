@@ -13,30 +13,35 @@ import {
   SocialIcons,
 } from "./HeaderStyles";
 
-<nav className="border-b p-6">
+{
+  /* <nav className="border-b p-6">
   <p className="text-4xl font-bold">Open Ocean</p>
   <div className="flex mt-4">
     <Link href="/">
-      <a className="mr-4 text-pink-500">Home</a>
+      <a className="mr-4 ">Home</a>
     </Link>
     <Link href="/create-item">
-      <a className="mr-6 text-pink-500">Sell Digital Asset</a>
+      <a className="mr-6 ">Sell Digital Asset</a>
     </Link>
     <Link href="/my-assets">
-      <a className="mr-6 text-pink-500">My Digital Assets</a>
+      <a className="mr-6 ">My Digital Assets</a>
     </Link>
     <Link href="/creator-dashboard">
-      <a className="mr-6 text-pink-500">Creator Dashboard</a>
+      <a className="mr-6 ">Creator Dashboard</a>
+    </Link>
+    <Link href="/mint">
+      <a className="mr-6 ">Mint</a>
     </Link>
   </div>
-</nav>;
+</nav>; */
+}
 
 const Header = () => (
   <Container>
     <Div1>
       <Link href="/landing">
         <a style={{ display: "flex", alignItems: "center", color: "white" }}>
-          <DiCssdeck size="3rem" /> <span>Open Ocean</span>
+          <span>Apelympics</span>
         </a>
       </Link>
     </Div1>
@@ -58,7 +63,12 @@ const Header = () => (
       </li>
       <li>
         <Link href="/creator-dashboard">
-          <NavLink>Creator dashboard</NavLink>
+          <NavLink>Created</NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="/mint">
+          <NavLink>Mint</NavLink>
         </Link>
       </li>
     </Div2>
